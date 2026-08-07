@@ -81,7 +81,7 @@ SELECT
     product,
     price * quantity AS revenue
 FROM sales
-WHERE price * quantity > 100000;
+WHERE price * quantity > 100000
 ORDER BY revenue DESC;
 ```
 
