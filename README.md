@@ -65,19 +65,75 @@ This explains why aliases created in `SELECT` cannot be used in `WHERE`, but wor
 
 ### Handling NULL Values Correctly
 
-Learned how NULL represents unknown values and why comparisons with NULL do not return TRUE or FALSE directly, leading to unexpected filtering behavior.
+Learned how NULL represents unknown values and how SQL uses three-valued logic (TRUE, FALSE, UNKNOWN). This helped understand why comparisons like `column = NULL` fail and why NULL values can silently affect query results.
 
 ---
 
-### Preventing Incorrect Business Metrics
+### Understanding Data Granularity Before Aggregation
 
-A key analytics learning was understanding how joins can multiply rows and create incorrect aggregations if the data grain is not considered before calculating metrics.
+Learned how joins can multiply rows and create incorrect metrics when aggregating data. Understanding table grain is essential for building accurate business reports.
 
 ---
 
-### Advanced Analytical SQL
+### Filtering Data at the Correct Stage
 
-Practiced window functions for calculations such as percentages, rankings, and running totals while maintaining row-level details.
+Learned the difference between:
+
+- WHERE → filters individual rows before aggregation
+- HAVING → filters grouped results after aggregation
+
+This improved my ability to write efficient analytical queries.
+
+---
+
+### Writing Maintainable SQL Using CTEs
+
+Learned how Common Table Expressions (CTEs) improve query readability by breaking complex logic into structured steps instead of deeply nested subqueries.
+
+---
+
+### Applying Conditional Aggregation
+
+Practiced using CASE statements with aggregation functions to transform rows into columns and create report-style outputs directly using SQL.
+
+---
+
+### Using Window Functions for Analytics
+
+Learned how window functions perform calculations while keeping row-level details, enabling analysis such as:
+
+- Percentage contribution
+- Ranking
+- Running totals
+- Moving averages
+
+---
+
+### Understanding Ranking Techniques
+
+Practiced choosing between:
+
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+
+based on whether unique ranking or tie handling is required.
+
+---
+
+### Solving Interview-Focused SQL Problems
+
+Applied SQL concepts to common interview problems such as:
+
+- Finding the second-highest salary
+- Identifying duplicate records
+- Top-N analysis
+
+---
+
+### Improving SQL Problem-Solving Approach
+
+Developed the habit of understanding the business question first, identifying the required data grain, and then selecting the appropriate SQL technique.
 
 ---
 
