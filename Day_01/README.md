@@ -30,6 +30,8 @@ Why does SQL refuse to recognize the `revenue` alias in `WHERE` but accept it in
 
 In one line, what executes first — `WHERE` or `SELECT`?
 
+---
+
 ## 💡 Solution:
 
 SQL does not execute queries from top to bottom. It follows a logical execution order:
