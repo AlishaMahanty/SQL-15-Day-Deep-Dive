@@ -66,7 +66,7 @@ WHERE runs first, SELECT runs later. Always.
 
 ### 📝 Query:
 
--- Incorrect query
+Incorrect query
 ```
 SELECT 
     product,
@@ -75,7 +75,7 @@ FROM sales
 WHERE revenue > 100000;
 ```
 
--- Correct query
+Correct query
 ```
 SELECT 
     product,
