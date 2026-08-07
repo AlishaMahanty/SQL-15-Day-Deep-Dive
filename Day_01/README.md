@@ -60,6 +60,10 @@ WHERE price * quantity > 100000
 
 or calculate it earlier using a CTE.
 
+**The bonus:** 
+
+WHERE runs first, SELECT runs later. Always.
+
 ### 📝 Query:
 
 -- Incorrect query
