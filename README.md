@@ -39,15 +39,15 @@ The goal was not only to write queries but to understand **why SQL behaves the w
 | Day 04 | GROUP BY Fundamentals | Aggregations, grouping rules, data grain |
 | Day 05 | WHERE vs HAVING | Row filtering vs group filtering |
 | Day 06 | JOIN and Aggregation | Avoiding duplicate calculations and incorrect metrics |
-| Day 07 | Subqueries | IN, EXISTS, NOT IN, NULL handling |
+| Day 07 | Subqueries | IN, EXISTS, NOT IN vs NOT EXISTS, NULL handling |
 | Day 08 | Common Table Expressions | Writing readable and structured queries |
-| Day 09 | Correlated Subqueries | Row-level comparisons |
+| Day 09 | Correlated Subqueries | Row-level comparisons and performance considerations |
 | Day 10 | Conditional Aggregation | CASE statements, SQL pivoting |
 | Day 11 | Window Functions | Aggregations without losing row-level details |
 | Day 12 | Ranking Functions | ROW_NUMBER, RANK, DENSE_RANK |
-| Day 13 | Running Totals | Window frames, cumulative calculations |
+| Day 13 | Running Totals & Moving Averages | Window frames, cumulative calculations |
 | Day 14 | SQL Interview Problems | Second highest salary, duplicate detection |
-| Day 15 | Final SQL Challenge | Applying concepts together |
+| Day 15 | SQL Deep Dive Wrap-up | Combining SQL concepts for interview problem-solving |
 
 ---
 
