@@ -19,7 +19,7 @@ Interestingly, using the same alias in 'ORDER BY' works perfectly:
 
 ORDER BY revenue DESC;
 
-### ❓ The question is:
+#❓ The question is:
 
 Why does SQL refuse to recognize the 'revenue' alias in 'WHERE' but accept it in 'ORDER BY'?
 
