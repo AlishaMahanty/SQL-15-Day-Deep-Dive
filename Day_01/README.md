@@ -4,7 +4,6 @@
 
 You write a SQL query to calculate revenue using an alias:
 
-```sql
 SELECT 
     product,
     price * quantity AS revenue
@@ -19,7 +18,7 @@ Interestingly, using the same alias in 'ORDER BY' works perfectly:
 
 ORDER BY revenue DESC;
 
-#❓ The question is:
+### ❓ The question is:
 
 Why does SQL refuse to recognize the 'revenue' alias in 'WHERE' but accept it in 'ORDER BY'?
 
