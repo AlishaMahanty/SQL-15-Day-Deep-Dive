@@ -32,7 +32,7 @@ Does `WHERE city != 'Mumbai'` include customers whose city is `NULL`, or does it
 
 ## 💡 Solution:
 
-`NUL`L is not a value. It represents the absence of a known value.
+`NULL` is not a value. It represents the absence of a known value.
 
 You cannot compare a value to `NULL` using `=` or `!=` and get `TRUE` or `FALSE`.
 
