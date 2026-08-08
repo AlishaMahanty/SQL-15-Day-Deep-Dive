@@ -103,6 +103,7 @@ WHERE city != 'Mumbai'
    OR city IS NULL;
 ```
 ## ⭐ Key Takeaways:
+
 - `NULL` represents the absence of a value, not an actual value.
 - Comparisons such as `= NULL` and `!= NULL` return `UNKNOWN`.
 - `WHERE` keeps only rows where the condition is `TRUE`.
