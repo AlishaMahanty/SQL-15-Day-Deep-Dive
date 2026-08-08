@@ -85,4 +85,4 @@ WHERE sales_rank <= 5;
 - Tied rows can appear in an arbitrary order when no tiebreaker is specified.
 - Add a secondary column to make the ordering deterministic.
 - Use `RANK()` when the requirement is to include all rows tied within the `top N` ranks.
-- `LIMIT` is for limiting rows, ranking functions are better for `top-N` analysis when ties matter.
+- `LIMIT` is for limiting rows, `RANK()` is better for `top N` analysis when ties matter.
