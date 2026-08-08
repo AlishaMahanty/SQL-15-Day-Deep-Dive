@@ -75,7 +75,9 @@ Find customers with NULL city
 SELECT *
 FROM customers
 WHERE city IS NULL;
+```
 Find customers with a known city
+```
 SELECT *
 FROM customers
 WHERE city IS NOT NULL;
