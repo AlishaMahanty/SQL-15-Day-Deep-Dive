@@ -78,6 +78,7 @@ SELECT dealer, sales
 FROM ranked
 WHERE sales_rank <= 5;
 ```
+
 ## ⭐ Key Takeaways:
 
 - LIMIT 5 returns exactly 5 rows; it does not account for ties.
