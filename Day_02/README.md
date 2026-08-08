@@ -58,7 +58,7 @@ To find customers whose city is `not NULL`:
 ```
 WHERE city IS NOT NULL
 ```
-The bonus:
+**The bonus:**
 
 `WHERE city != 'Mumbai'` also silently drops the blank-city customers because:
 ```
@@ -70,7 +70,7 @@ WHERE city != 'Mumbai' OR city IS NULL
 ```
 ### 📝 Query:
 
-Incorrect query
+**Incorrect query**
 ```
 SELECT *
 FROM customers
@@ -81,7 +81,7 @@ SELECT *
 FROM customers
 WHERE city != 'Mumbai';
 ```
-Correct query
+**Correct query**
 
 Find customers with NULL city
 ```
