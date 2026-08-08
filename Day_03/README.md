@@ -57,6 +57,7 @@ ORDER BY sales DESC
 LIMIT 5;
 ```
 **Correct Query**
+
 Query with a Tiebreaker
 ```
 SELECT dealer, sales
