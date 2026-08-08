@@ -10,7 +10,6 @@ SELECT *
 FROM customers 
 WHERE city = NULL;
 ```
-
 But the query returns zero rows.
 
 You then try:
