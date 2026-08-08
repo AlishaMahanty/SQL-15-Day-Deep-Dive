@@ -58,6 +58,7 @@ To find customers whose city is `not NULL`:
 ```
 WHERE city IS NOT NULL
 ```
+
 **The bonus:**
 
 `WHERE city != 'Mumbai'` also silently drops the blank-city customers because:
@@ -68,6 +69,7 @@ If you want to include both non-Mumbai customers and customers whose city is unk
 ```
 WHERE city != 'Mumbai' OR city IS NULL
 ```
+
 ### 📝 Query:
 
 **Incorrect Query**
@@ -102,6 +104,7 @@ FROM customers
 WHERE city != 'Mumbai'
    OR city IS NULL;
 ```
+
 ## ⭐ Key Takeaways:
 
 - `NULL` represents the absence of a value, not an actual value.
