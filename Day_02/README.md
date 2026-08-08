@@ -70,7 +70,7 @@ WHERE city != 'Mumbai' OR city IS NULL
 ```
 ### 📝 Query:
 
-**Incorrect query**
+**Incorrect Query**
 ```
 SELECT *
 FROM customers
@@ -81,7 +81,7 @@ SELECT *
 FROM customers
 WHERE city != 'Mumbai';
 ```
-**Correct query**
+**Correct Query**
 
 Find customers with NULL city
 ```
