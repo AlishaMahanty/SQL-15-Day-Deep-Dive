@@ -69,13 +69,13 @@ SELECT city, product, SUM(sales)
 FROM orders
 GROUP BY city, product;
 ```
-**For Total Sales per City**
+For Total Sales per City
 ```
 SELECT city, SUM(sales) AS total_sales
 FROM orders
 GROUP BY city;
 ```
-**For Total Sales per City and Category**
+For Total Sales per City and Category
 ```
 SELECT city, category, SUM(sales) AS total_sales
 FROM orders
