@@ -55,7 +55,7 @@ MySQL may silently return an arbitrary product unless strict mode is enabled, wh
 
 One `GROUP BY` represents one level of data grain. To get totals per city and per city + category, you need separate grouping logic or calculate the finer grain first and roll it up.
 
-📝 Query:
+### 📝 Query:
 
 **Query with the Issue**
 ```
