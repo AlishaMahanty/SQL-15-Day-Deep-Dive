@@ -1,4 +1,4 @@
-# Day 03 - LIMIT and Ties
+# Day 03 - LIMIT vs RANK()
 
 ## 📌 Problem:
 
