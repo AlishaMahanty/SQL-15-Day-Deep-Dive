@@ -10,7 +10,9 @@ GROUP BY city
 WHERE SUM(sales) > 1000000;
 ```
 The query returns an error: 
-``Invalid use of group function``
+``
+Invalid use of group function
+``
 
 ### ❓ The question is:
 
