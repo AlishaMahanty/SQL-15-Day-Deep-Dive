@@ -10,10 +10,9 @@ GROUP BY city
 WHERE SUM(sales) > 1000000;
 ```
 The query returns an error: 
-``
+```
 Invalid use of group function
-``
-
+```
 ### ❓ The question is:
 
 Why can't `WHERE` filter on `SUM(sales)`, and which clause is built to do exactly that?
