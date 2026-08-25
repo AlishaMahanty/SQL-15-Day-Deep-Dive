@@ -30,9 +30,9 @@ A `JOIN` can multiply rows before the aggregation takes place.
 The order has 3 line items, so after the join, the same order appears in 3 rows. The `order_total` of ₹5,000 is therefore repeated across all 3 rows.
 
 When `SUM(order_total)` runs, it calculates:
-`
+```
 ₹5,000 + ₹5,000 + ₹5,000 = ₹15,000
-`
+```
 Nothing is wrong with the `SUM()` function. The issue is the grain of the data after the join.
 
 The fix is to aggregate at the correct grain.
