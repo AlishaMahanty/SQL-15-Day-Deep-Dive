@@ -35,7 +35,7 @@ A `LEFT JOIN` keeps every row from the left table.
 For customers who have no orders, the columns from the `orders` table contain `NULL`.
 
 After the join, this condition runs:
-```sql
+```
 WHERE o.status = 'delivered'
 ```
 For customers with no orders:
@@ -53,7 +53,7 @@ LEFT JOIN orders o
     AND o.status = 'delivered'
 ```
 Another option is to explicitly allow the `NULL` values:
-```sql
+```
 WHERE o.status = 'delivered'
    OR o.status IS NULL
 ```
