@@ -12,23 +12,20 @@ LEFT JOIN orders o
     ON o.customer_id = c.customer_id
 WHERE o.status = 'delivered';
 ```
-
-However, customers who have never ordered suddenly disappear from the result.
+However, customers who have never ordered silently disappear from the result, leaving only customers who have placed an order. 
 
 You never removed the `LEFT JOIN`, but it no longer behaves like one.
 
 ### ❓ The question is:
 
-Why does the `WHERE` condition turn the `LEFT JOIN` into an effective `INNER JOIN`?
+Your `LEFT JOIN` just quietly became an `INNER JOIN`. What single line did it, and why?
 
 **Bonus Question:**
 
-If there are 100 customers and 30 have never ordered, what happens when you add:
-
-```sql
+If there are 100 customers and 30 have never ordered, what happens when you `LEFT JOIN` then add:
+```
 WHERE o.order_date > '2024-01-01'
 ```
-
 How many customers roughly survive?
 
 ## 💡 Solution:
@@ -38,11 +35,9 @@ A `LEFT JOIN` keeps every row from the left table.
 For customers who have no orders, the columns from the `orders` table contain `NULL`.
 
 After the join, this condition runs:
-
 ```sql
 WHERE o.status = 'delivered'
 ```
-
 For customers with no orders:
 
 ```text
