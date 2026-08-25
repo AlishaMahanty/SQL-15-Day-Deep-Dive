@@ -3,6 +3,7 @@
 ## 📌 Problem:
 
 You want a list of All customers with their orders, including customers who have never placed an order.
+
 So you use a `LEFT JOIN`:
 ```
 SELECT c.customer, o.order_id
