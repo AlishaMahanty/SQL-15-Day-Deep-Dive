@@ -88,13 +88,11 @@ LEFT JOIN orders o
 WHERE o.status = 'delivered'
    OR o.status IS NULL;
 ```
-
 ## ⭐ Key Takeaways:
 
-* A `LEFT JOIN` keeps all rows from the left table.
-* Unmatched rows from the right table contain `NULL`.
-* A `WHERE` condition on a right-table column can remove those `NULL` rows.
-* This can make a `LEFT JOIN` behave like an `INNER JOIN`.
-* When filtering the right table while preserving unmatched rows, put the condition in the `ON` clause.
-* Always consider where a filter is applied when working with outer joins.
-
+- A `LEFT JOIN` keeps all rows from the left table.
+- Unmatched rows from the right table contain `NULL`.
+- A `WHERE` condition on a right-table column can remove those `NULL` rows.
+- This can make a `LEFT JOIN` behave like an `INNER JOIN`.
+- When filtering the right table while preserving unmatched rows, put the condition in the `ON` clause.
+- Always consider where a filter is applied when working with outer joins.
