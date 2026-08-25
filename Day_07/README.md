@@ -48,6 +48,7 @@ Another approach is to aggregate `order_items` to one row per order first and th
 After the join:
 
 `COUNT(*)` counts all rows created by the join.
+
 `COUNT(DISTINCT o.order_id)` counts the actual orders.
 
 ### 📝 Query:
