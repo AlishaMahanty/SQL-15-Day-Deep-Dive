@@ -95,4 +95,4 @@ WHERE o.status = 'delivered'
 - A `WHERE` condition on a right-table column can remove those `NULL` rows.
 - This can make a `LEFT JOIN` behave like an `INNER JOIN`.
 - When filtering the right table while preserving unmatched rows, put the condition in the `ON` clause.
-- Always consider where a filter is applied when working with outer joins.
+- In a `LEFT JOIN`, putting a filter in `WHERE` or `ON` can produce different results.
