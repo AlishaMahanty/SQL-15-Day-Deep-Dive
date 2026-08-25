@@ -53,30 +53,16 @@ After the join:
 
 ### 📝 Query:
 
-Query with the Issue
+**Query with the Issue**
 ```
 SELECT SUM(o.order_total)
 FROM orders o
 JOIN order_items i 
     ON i.order_id = o.order_id;
 ```
-Correct Query
+**Correct Query**
 ```
 SELECT SUM(i.quantity * i.price) AS total_revenue
-FROM orders o
-JOIN order_items i 
-    ON i.order_id = o.order_id;
-```
-Query with the Issue
-```
-SELECT COUNT(*)
-FROM orders o
-JOIN order_items i 
-    ON i.order_id = o.order_id;
-```
-Correct Query
-```
-SELECT COUNT(DISTINCT o.order_id)
 FROM orders o
 JOIN order_items i 
     ON i.order_id = o.order_id;
