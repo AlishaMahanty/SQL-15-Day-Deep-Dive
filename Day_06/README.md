@@ -39,59 +39,48 @@ After the join, this condition runs:
 WHERE o.status = 'delivered'
 ```
 For customers with no orders:
-
-```text
+```
 NULL = 'delivered' → UNKNOWN
 ```
-
 `WHERE` only keeps rows where the condition is `TRUE`. Therefore, customers with no orders are removed.
 
 The `LEFT JOIN` effectively behaves like an `INNER JOIN`.
 
 If you want to keep the `LEFT JOIN` and only include delivered orders, move the condition into the `ON` clause:
-
-```sql
+```
 LEFT JOIN orders o 
     ON o.customer_id = c.customer_id
     AND o.status = 'delivered'
 ```
-
 Another option is to explicitly allow the `NULL` values:
-
 ```sql
 WHERE o.status = 'delivered'
    OR o.status IS NULL
 ```
-
 **The bonus:**
 
-If 30 customers never ordered, a `WHERE` condition on a column from the right table removes those 30 customers. Roughly **70 customers** survive.
+If 30 customers never ordered, a `WHERE` condition on a column from the right table removes those 30 customers. Roughly 70 customers survive.
 
 ### 📝 Query:
 
 **Query with the Issue**
-
-```sql
+```
 SELECT c.customer, o.order_id
 FROM customers c
 LEFT JOIN orders o 
     ON o.customer_id = c.customer_id
 WHERE o.status = 'delivered';
 ```
-
 **Correct Query**
-
-```sql
+```
 SELECT c.customer, o.order_id
 FROM customers c
 LEFT JOIN orders o 
     ON o.customer_id = c.customer_id
     AND o.status = 'delivered';
 ```
-
 **Alternative Correct Query**
-
-```sql
+```
 SELECT c.customer, o.order_id
 FROM customers c
 LEFT JOIN orders o 
