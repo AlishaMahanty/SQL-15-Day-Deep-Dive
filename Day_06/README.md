@@ -88,6 +88,7 @@ LEFT JOIN orders o
 WHERE o.status = 'delivered'
    OR o.status IS NULL;
 ```
+
 ## ⭐ Key Takeaways:
 
 - A `LEFT JOIN` keeps all rows from the left table.
