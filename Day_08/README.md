@@ -102,7 +102,9 @@ WHERE NOT EXISTS (
     WHERE o.customer_id = customers.customer_id
 );
 ```
+
 ## ⭐ Key Takeaways:
+
 - A single `NULL` in a `NOT IN` subquery can cause the entire condition to evaluate to `UNKNOWN`.
 - `NOT IN` can produce unexpected results when the subquery contains `NULL`.
 - Filter out `NULL` values when using `NOT IN`.
