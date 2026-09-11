@@ -54,7 +54,7 @@ This includes the current month and the previous two months, creating a 3-month 
 
 ### 📝 Query:
 
-Running Total
+**Running Total**
 ```
 SELECT month, sales,
     SUM(sales) OVER (ORDER BY month) AS running_total
