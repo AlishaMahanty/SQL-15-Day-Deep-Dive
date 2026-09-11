@@ -81,6 +81,7 @@ SELECT city, category, SUM(sales) AS total_sales
 FROM orders
 GROUP BY city, category;
 ```
+
 ## ⭐ Key Takeaways:
 
 - Every non-aggregated column in `SELECT` should be included in `GROUP BY`.
