@@ -53,7 +53,7 @@ WHERE price * quantity > 100000
 ```
 or calculate it earlier using a CTE.
 
-**The bonus:** 
+**The Bonus:** 
 
 WHERE runs first, SELECT runs later. Always.
 
