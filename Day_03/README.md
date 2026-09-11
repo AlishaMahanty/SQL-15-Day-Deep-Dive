@@ -43,7 +43,7 @@ Now dealers with the same sales are ordered alphabetically.
 
 However, if the requirement is to include all dealers tied for 5th place, use a ranking function such as `RANK()` and filter for `rank <= 5`.
 
-**The bonus:**
+**The Bonus:**
 
 Without a tiebreaker, the order of tied rows is undefined. Never trust it.
 
