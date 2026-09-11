@@ -6,7 +6,7 @@ Your sales table has one row per sale, with a month column containing `Jan`, `Fe
 
 Your manager wants a report with one row per product and three separate columns: Jan sales, Feb sales, and Mar sales side by side. This is a pivot.
 
-### ❓ The uestion is:
+### ❓ The question is:
 
 How do you turn rows into columns in pure SQL, using `CASE`?
 
