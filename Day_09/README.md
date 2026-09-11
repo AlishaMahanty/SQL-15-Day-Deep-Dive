@@ -61,7 +61,7 @@ The `CTE` exists only for the statement in which it is defined. Once the query e
 
 ### 📝 Query:
 
-Query with the Issue
+**Query with the Issue**
 ```
 SELECT *
 FROM (
@@ -74,7 +74,7 @@ FROM (
 WHERE x.profit_pct > 500
   AND x.rating < (SELECT AVG(rating) FROM products);
 ```
-Correct Query
+**Correct Query**
 ```
 WITH profit AS (
     SELECT 
@@ -89,7 +89,7 @@ WHERE profit_pct > 500
   AND rating < (SELECT AVG(rating) FROM products);
 ```
 
-⭐ Key Takeaways:
+## ⭐ Key Takeaways:
 
 - A `CTE` uses the `WITH` clause to create a named temporary result.
 - `CTEs` can make complex queries easier to read and maintain.
