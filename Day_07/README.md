@@ -67,6 +67,7 @@ FROM orders o
 JOIN order_items i 
     ON i.order_id = o.order_id;
 ```
+
 ## ⭐ Key Takeaways:
 
 - A `JOIN` can multiply rows before aggregation.
