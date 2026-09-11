@@ -46,7 +46,7 @@ FROM orders
 GROUP BY city
 HAVING SUM(sales) > 1000000;
 ```
-**The bonus:**
+**The Bonus:**
 
 `WHERE region = 'South'` and `HAVING region = 'South'` can return the same rows in this case, but `WHERE` is faster because it filters the rows before grouping. This leaves fewer rows for the aggregation step.
 
