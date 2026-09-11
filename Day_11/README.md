@@ -56,7 +56,7 @@ SELECT product,
 FROM sales
 GROUP BY product;
 ```
-CASE Example
+**CASE Example**
 ```
 CASE
     WHEN score >= 90 THEN 'A'
@@ -66,6 +66,7 @@ END
 ```
 
 ## ⭐ Key Takeaways:
+
 - `CASE` works like an if/else statement in SQL.
 - `SUM(CASE...)` is a powerful technique for conditional aggregation.
 - Conditional aggregation can be used to turn rows into columns.
