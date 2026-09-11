@@ -66,6 +66,7 @@ FROM orders
 GROUP BY city
 HAVING SUM(sales) > 1000000;
 ```
+
 ## ⭐ Key Takeaways:
 
 - `WHERE` filters individual rows before grouping.
