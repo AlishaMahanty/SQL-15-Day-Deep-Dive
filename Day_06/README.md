@@ -57,7 +57,7 @@ Another option is to explicitly allow the `NULL` values:
 WHERE o.status = 'delivered'
    OR o.status IS NULL
 ```
-**The bonus:**
+**The Bonus:**
 
 If 30 customers never ordered, a `WHERE` condition on a column from the right table removes those 30 customers. Roughly 70 customers survive.
 
