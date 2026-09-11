@@ -51,7 +51,7 @@ city is grouped and `SUM(sales)` is aggregated, but product is neither.
 
 MySQL may silently return an arbitrary product unless strict mode is enabled, while other databases reject the query.
 
-**The bonus:**
+**The Bonus:**
 
 One `GROUP BY` represents one level of data grain. To get totals per city and per city + category, you need separate grouping logic or calculate the finer grain first and roll it up.
 
