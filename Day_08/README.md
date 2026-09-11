@@ -63,7 +63,7 @@ WHERE NOT EXISTS (
     WHERE o.customer_id = customers.customer_id
 )
 ```
-**The bonus:**
+**The Bonus:**
 
 The three subquery shapes are:
 
