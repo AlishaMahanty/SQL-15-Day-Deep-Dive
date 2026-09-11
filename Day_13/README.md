@@ -31,18 +31,21 @@ OVER (PARTITION BY region ORDER BY sales DESC)
 The difference is how they handle ties.
 
 `ROW_NUMBER()`
-`1, 2, 3, 4`
-
+```
+1, 2, 3, 4`
+```
 Every row receives a unique number. Ties are broken arbitrarily.
 
 Use ROW_NUMBER() when you need to select exactly one row per group or deduplicate records.
 
 `RANK()`
-```1, 2, 2, 4```
-
-Tied rows receive the same rank, and the next rank is skipped.
 ```
-DENSE_RANK()
+1, 2, 2, 4
+```
+Tied rows receive the same rank, and the next rank is skipped.
+
+`DENSE_RANK()`
+```
 1, 2, 2, 3
 ```
 Tied rows receive the same rank, but there is no gap after the tie.
