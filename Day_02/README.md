@@ -59,7 +59,7 @@ To find customers whose city is `not NULL`:
 WHERE city IS NOT NULL
 ```
 
-**The bonus:**
+**The Bonus:**
 
 `WHERE city != 'Mumbai'` also silently drops the blank-city customers because:
 ```
