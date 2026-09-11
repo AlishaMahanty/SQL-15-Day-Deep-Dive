@@ -43,7 +43,7 @@ SUM(i.quantity * i.price)
 ```
 Another approach is to aggregate `order_items` to one row per order first and then join it with orders.
 
-**The bonus:**
+**The Bonus:**
 
 After the join:
 
