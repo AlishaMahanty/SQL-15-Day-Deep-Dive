@@ -57,7 +57,7 @@ WITH step1 AS (...),
      step2 AS (...)
 SELECT ...
 ```
-**The bonus:**
+**The Bonus:**
 
 The `CTE` exists only for the statement in which it is defined. Once the query ends with a semicolon, the `CTE` cannot be reused in the next query. If you need a reusable result, you would use a `VIEW`.
 
